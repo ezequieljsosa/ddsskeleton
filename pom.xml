@@ -9,6 +9,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		
+		<junit.version>4.12</junit.version>
+		<junit.jupiter.version>5.0.0-M3</junit.jupiter.version>
+		
 	</properties>
 
 
@@ -29,6 +33,22 @@
 			<artifactId>guava</artifactId>
 			<version>21.0</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.junit/junit5-engine -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+
 	</dependencies>
 
 </project>
